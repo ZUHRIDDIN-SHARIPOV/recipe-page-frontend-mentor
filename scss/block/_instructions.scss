@@ -1,0 +1,35 @@
+.instructions {
+  padding: 32px 0;
+  border-bottom: 1px solid $white-coffee;
+}
+.instructions__title {
+  margin-bottom: 24px;
+  @include title;
+  font-size: 28px;
+  color: $brandy-red;
+}
+.instructions__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.instructions__item {
+  display: flex;
+  column-gap: 16px;
+}
+.instructions__item-order {
+  @include text;
+  font-weight: 700;
+}
+.instructions__item-text {
+  @include text;
+}
+.instructions__item-text span {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) {
+  .instructions__block {
+    padding: 0 20px;
+  }
+}
