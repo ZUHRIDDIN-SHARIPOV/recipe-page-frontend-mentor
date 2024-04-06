@@ -15,6 +15,7 @@ html {
 
 body {
   margin: 0;
+  background: #f3e5d7;
 }
 
 ul,
@@ -51,4 +52,126 @@ img {
   width: 100%;
   height: auto;
   display: inline-block;
+}
+
+main {
+  margin: 123px 0;
+  padding: 40px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.hero__img img {
+  border-radius: 12px;
+}
+
+.hero__title {
+  font-family: "Young Serif";
+  font-weight: 400;
+  line-height: 100%;
+  font-size: 40px;
+  color: #312e2c;
+  margin: 40px 0 24px 0;
+}
+
+.hero__text {
+  font-family: "Outfit";
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  color: #5f564d;
+  margin-bottom: 32px;
+}
+
+.hero__content {
+  padding: 28px;
+  border-radius: 12px;
+  background: #fff7fb;
+}
+
+.hero__content-title {
+  font-family: "Young Serif";
+  font-weight: 400;
+  line-height: 100%;
+  font-size: 40px;
+  color: #312e2c;
+  font-family: "Outfit";
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #7a284e;
+}
+
+.hero__content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 8px;
+}
+
+.hero__content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 28px;
+     -moz-column-gap: 28px;
+          column-gap: 28px;
+}
+
+.hero__content-item-icon {
+  width: 4px;
+  margin-left: 8px;
+}
+
+.hero__content-item-text {
+  font-family: "Outfit";
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 16px;
+  color: #5f564d;
+}
+
+.hero__content-item-text span {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 540px) {
+  body {
+    background: #fff;
+  }
+  main {
+    margin: 70px 0;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 0;
+  }
+  .hero__img img {
+    border-radius: 0;
+  }
+  main {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  .hero__title {
+    padding: 0 20px;
+    font-size: 36px;
+  }
+  .hero__text {
+    padding: 0 20px;
+  }
+  .hero__content {
+    margin: 0 20px;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .hero__title {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
