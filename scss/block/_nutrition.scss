@@ -1,0 +1,44 @@
+.nutrition {
+  padding-top: 32px;
+}
+.nutrition__title {
+  @include title;
+  font-size: 28px;
+  color: $brandy-red;
+}
+.nutrition__text {
+  margin: 24px 0;
+  @include text;
+}
+.nutrition__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.nutrition__item {
+  display: flex;
+  column-gap: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $white-coffee;
+}
+.nutrition__item-order {
+  max-width: 288px;
+  width: 100%;
+  padding-left: 32px;
+  @include text;
+}
+.nutrition__item-text {
+  @include text;
+  font-weight: 700;
+  padding-right: 32px;
+  color: $brandy-red;
+}
+.nutrition__item:last-child {
+  border-bottom: transparent;
+}
+
+@media only screen and (max-width: 375px) {
+  .nutrition__block {
+    padding: 0 20px;
+  }
+}
